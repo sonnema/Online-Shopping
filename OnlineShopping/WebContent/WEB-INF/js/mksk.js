@@ -4,11 +4,8 @@ showSlides();
 function showSlides() {
 	var i;
 	var slideshowdiv = document.getElementById("slideshow-div");
-	alert("slideshowdiv : " + slideshowdiv);
 	var slides = slideshowdiv.getElementsByClassName("mySlides");
-    alert("total slides : " + slides.length);
     var dots = document.getElementsByClassName("dot");
-    alert("total dots : " + dots.length);
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
     }
