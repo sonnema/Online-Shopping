@@ -1,36 +1,57 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>MKSK Jewels</title>
     <link href="../css/mksk.css" rel="stylesheet">
-    <link href="../js/mksk.js" rel="stylesheet">
   </head>
   <body>
-    <div id="header">
-      <div id="navigationTabs" >
-      	<ul>
-      		<li id="LogoDetails" class="active">
-      			<img src="../img/logo.png" id="LogoImage" alt="Logo Image"></img>
-      			<br/>
-      			<span id="LogoHeading" >
-      				MKSK Jewels
-      			</span>
-      		</li>
-      		<li class="nav-right">
-      			<a href="#">Jewelry Collection</a>
-      		</li>
-      		<li class="nav-right">
-      			<a href="#">Luxury Watches</a>
-      		</li>
-      		<li class="nav-right">
-      			<a href="#">Occasions</a>
-      		</li>
-      		<li class="nav-right">
-      			<a href="#">History Heritage</a>
-      		</li>
-      	</ul>
-      </div>
-  	</div>  
+  <div id="header">
+  	<div id="navigationTabs" class="topnav" >
+    	<a id="LogoDetails" class="active">
+    		<img src="../img/logo.png" id="LogoImage" alt="Logo Image"></img>
+      		<br/>
+      		<span id="LogoHeading" >MKSK Jewels</span>
+      	</a>
+      	<div class="topnav-right">
+      		<a href="#">Jewelry Collection</a>
+      		<a href="#">Luxury Watches</a>
+      		<a href="#">Occasions</a>
+      		<a href="#">History Heritage</a>
+      	</div>
+  	</div><!-- End of navigation tabs -->
+  	<div id="slideshow-div" class="slideshow-container">
+  		<!-- Full-width images with number and caption text -->
+  		<div class="mySlides fade">
+    		<div class="numbertext">1 / 4</div>
+    		<img src="../img/slideshowImg1.png" style="width:100%;">
+    		<div class="text">Caption Text</div>
+  		</div>
+  		<div class="mySlides fade">
+    		<div class="numbertext">2 / 4</div>
+    		<img src="../img/slideshowImg2.png" style="width:100%;">
+    		<div class="text">Caption Text</div>
+  		</div>
+  		<div class="mySlides fade">
+    		<div class="numbertext">3 / 4</div>
+    		<img src="../img/slideshowImg3.png" style="width:100%;">
+    		<div class="text">Caption Text</div>
+  		</div>
+  		<div class="mySlides fade">
+    		<div class="numbertext">4 / 4</div>
+    		<img src="../img/slideshowImg4.png" style="width:100%;">
+    		<div class="text">Caption Text</div>
+  		</div>
+  	</div><!-- End of slide show -->
+  	<br>
+  	<div style="text-align:center;">
+  		<span class="dot" ></span> 
+  		<span class="dot" ></span> 
+  		<span class="dot" ></span>
+  		<span class="dot" ></span> 
+	</div><!-- End of dots -->
+  </div><!-- End of header -->  
+  <script src="../js/mksk.js" ></script>
   </body>
 </html>    
