@@ -1,4 +1,8 @@
+
 .topnav {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
   overflow: hidden;
   background-color: #fff;
 }
@@ -24,6 +28,7 @@
 
 .topnav-right {
   float: right;
+  margin:20px;
 }
 
 #LogoDetails {
@@ -43,19 +48,23 @@
 	color: #333;
 }
 
+/* Slideshow container */
 * {
-	box-sizing: border-box
+  box-sizing: border-box;
 }
 
-/* Slideshow container */
-* {box-sizing: border-box;}
 .slideshow-container {
   max-width: 1440px;
   position: relative;
   margin: auto;
 }
 .mySlides {
-  display: none;
+  display:none;
+  height:600px;
+}
+.mySlides img {
+	height:100%;
+	width:100%;
 }
 /* Caption text */
 .text {
@@ -90,6 +99,7 @@
 .active {
   background-color: #717171;
 }
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
