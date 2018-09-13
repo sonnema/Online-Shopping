@@ -1,4 +1,8 @@
-
+body {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+}
 .topnav {
   max-width: 1440px;
   position: relative;
@@ -117,7 +121,46 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width:23.6%;
+    padding:15px;
+    margin:15px 10px 15px 10px;
+    height:450px;
+}
+.left, .right {
+	width: 27%;
+}
+.middle {
+	width:41.75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+  margin:20px 10px;
+  text-align:center;
+  padding:15px;
+  background-color:black;
+  color:#fff;
+}
+.footer a {
+	text-decoration:none;
+	color:white;
+	padding:20px;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+  .text {font-size: 11px;}
+  .column {width:100%;}
 }
