@@ -158,7 +158,7 @@ body {
 }
 .footer .row {
 	background-color:black;
-	text-align:center;
+	/*text-align:center;*/
 }
 .col {
     float: left;
@@ -210,41 +210,6 @@ body {
   color: white;
 }
 
-/* Contact Us Form */
-input[type=text], textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 6px 50px 20px 10px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color:black;
-    color: #f2f2f2;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-    color:white;
-}
-label {
-	color:black;
-	margin:0 !important;
-}
-.container {
-	width:80%;
-	margin:20px auto;
-	border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 5px 50px 15px 40px;
-}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
