@@ -1,56 +1,139 @@
 body {
   max-width: 1440px;
+  background-color:#dbdbdb;
   position: relative;
   margin: auto;
 }
+
 .topnav {
   max-width: 1440px;
   position: relative;
-  margin: auto;
+  margin: 1% auto ;
+  height:120px;
+  border-radius:5px;
   overflow: hidden;
   background-color: #fff;
 }
 
-.topnav a {
-  float: left;
-  color: #333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.topnav-row {
+	height:65%;
+	width:100%;
 }
-
-.topnav a:hover {
-  background-color: #fff;
-  color: #333;
+.topnav-tabs {
+	height:35%;
+	width:100%;
+	padding-top:0.25%;
+	padding-left:1%;
+	background-color:#104E8B;
+    color: #ffffff;
 }
-
-.topnav a.active {
-  background-color: #fff;
-  color: #333;
+.topnav-row-left {
+	width:30%;
+	height:100%;
+	float:left;
+	padding:15px;
 }
-
-.topnav-right {
-  float: right;
-  margin:20px;
+.trl-col, .trr-col {
+	height:100%;
 }
-
-#LogoDetails {
-	padding: 14px;
+.trl-col span{
+	font-size:200%;
+	margin:3.5%;
+	color:#104E8B;
+	font-family:sans-serif;
 }
-
 #LogoImage {
-	height: 34px;
-	width: 85px;
+	height: 45px;
+	width: 80px;
 	border-radius: 50%;
-	padding: 2px 26px;
+}
+.topnav-row-right {
+	width:70%;
+	height:100%;
+	float:right;
+}
+.trr-col-links {
+	padding-top:1.5%;
+	padding-left:1%;
+	font-size:110%;
+}
+.trr-col a {
+	text-decoration:none;
+	padding-left:1%;
+	color:#104E8B;
+	font-size:100%;
+}
+.divider {
+	color:#104E8B;
+	padding-left:3%;
+	padding-right:2%;
+	font-size:120%;
+	font-weight:700;
 }
 
-#LogoHeading {
-	font-size: 20px;
-	padding: 14px 16px;
-	color: #333;
+.topnav-tabs .divider {
+	color:#ffffff;
+	padding-left:3%;
+	padding-right:2%;
+	font-size:150%;
+	font-weight:700;
 }
+.topnav-tabs a {
+	text-decoration:none;
+	padding-left:2%;
+	color:#ffffff;
+	font-size:120%;
+}
+/*
+.topnav-tabs a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.topnav-tabs a.active {
+  background-color: #fff;
+  color: #333;
+}
+*/
+
+/* Search button styling */
+
+form.searchbtn input[type=text] {
+    padding: 10px;
+    font-size: 19px;
+    border: 2px solid #104E8B;
+    float: left;
+    width: 80%;
+    background: #ffffff;
+}
+
+form.searchbtn button {
+    float: left;
+    width: 20%;
+    padding: 9px;
+    background-color:#104E8B;
+    color: #f2f2f2;
+    font-size: 15px;
+    border: 2px solid #104E8B;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.searchbtn button:hover {
+    background-color: #ffffff;
+    color:#104E8B;
+    border:2px solid #104E8B;
+}
+
+form.searchbtn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+form.searchbtn {
+	margin:13px 15px 10px 15px;
+}
+
 
 /* Slideshow container */
 * {
@@ -61,6 +144,8 @@ body {
   max-width: 1440px;
   position: relative;
   margin: auto;
+  border-radius:5px;
+  overflow: hidden;
 }
 .mySlides {
   display:none;
@@ -143,11 +228,37 @@ body {
     display: table;
     clear: both;
 }
+/* Back to Top Icon styling */
+.back-to-top {
+	background: none;
+	margin: auto 40%;
+ 	position:relative;
+ 	width: 70px;
+	height: 70px;
+	z-index: 120;
+	display: none;
+	text-decoration: none;
+	color: #fff;
+	background-color: black;
+	border-radius:5%;
+}
+.back-to-top span {
+	font-size:16px;
+	padding:5px 10px 5px 15px ;
+}
+ 
+.back-to-top i {
+  font-size: 16px;
+}
+
+/* Styling footer */
 .footer {
-  max-width: 1440px;
+  max-width:1440px;
   position: relative;
+  border-radius:5px;
+  overflow: hidden;
   margin:20px 10px;
-  height:100px;
+  height:150px;
   background-color:black;
   color:#fff;
  }
@@ -156,9 +267,8 @@ body {
 	color:white;
 	padding:40px 100px; 
 }
-.footer .row {
+.footer.row {
 	background-color:black;
-	/*text-align:center;*/
 }
 .col {
     float: left;
@@ -167,7 +277,7 @@ body {
 }
 
 /* Clear floats after the columns */
-.footer .row:after {
+.footer.row:after {
     content: "";
     display: table;
     clear: both;
