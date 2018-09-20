@@ -22,7 +22,6 @@ function showSlides() {
 };
 
 /* Opening and Closing of Modal Boxes */
-
 function closestEl(el, selector) {
     var doc = el.document || el.ownerDocument;
     var matches = doc.querySelectorAll(selector);
@@ -39,6 +38,7 @@ function closestEl(el, selector) {
     }
     return el;
 }
+
 var modalLnks = document.querySelectorAll(".modalLink");
 modalLnks.forEach(function addBtnClickEvent(lnk) {
     lnk.onclick = function showModal() {
@@ -61,22 +61,33 @@ window.onclick = function closeOnClick(event) {
     }
 };
 
-/*
-function openLink(evt, linkName) {
-	console.log("evt : " + evt + " linkName : " + linkName);
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    console.log(tabcontent);
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        console.log(tabcontent[i]);
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-        console.log(tablinks[i].className);
-    }
-    document.getElementById(linkName).style.display = "block";
-    evt.currentTarget.className += " active";
-};
-*/
+/* Open Tab Contents */ 
+function openTabContent(tabContent){
+	var elem;
+	var tabClass = document.querySelectorAll('.tabcontent');
+    var i = 0, l = tabClass.length;
+	for (i; i < l; i++) {
+		tabClass[i].style.display = 'none';
+	}
+	document.getElementById(tabContent).style.display = "block";
+	elem = document.querySelector('.topnav');
+	elem.style.setProperty("margin",0);
+}
+
+/* Close Tab Contents if clicked anywhere else on the window */
+var element = document.querySelectorAll('.tabcontent');
+document.body.addEventListener('click', function(e) {
+  var i = 0, l = element.length;
+  for(i;i<l;i++)
+  {
+	if (e.target == element[i]) 
+	{
+		continue;
+	} 
+	else 
+	{
+		element[i].style.display = 'none';	
+	}
+  }
+});
+
