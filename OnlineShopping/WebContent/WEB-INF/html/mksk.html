@@ -14,23 +14,24 @@
   	<div id="navigationTabs" class="topnav" > 
     	<div class="topnav-row">
     		<div class="topnav-row-left">
-    			<div class="trl-col" style="width:25%;float:left;">
+    			<div class="trl-col trl-col-left">
       				<a id="LogoDetails" href="../html/mksk.html">
     					<img src="../img/logo.png" id="LogoImage" alt="Logo Image"></img>
       				</a>
       			</div>
-      			<div class="trl-col" style="width:75%;float:right;">
+      			<div class="trl-col trl-col-right">
       				<span>MKSK JEWELS</span>
       			</div>
       		</div>
+      		
       		<div class="topnav-row-right">
-      			<div class="trr-col" style="width:55%;float:left;">
+      			<div class="trr-col trr-col-left">
       				<form class="searchbtn" action="action_page.php">
   						<input type="text" placeholder="Search for jewellery eg Gold.." name="search">
   						<button type="submit"><i class="fa fa-search"></i></button>
 					</form>
       			</div>
-      			<div class="trr-col trr-col-links" style="width:45%;float:right;">
+      			<div class="trr-col trr-col-right trr-col-links">
       				<div style="width:100%;height:50%;padding-left:25%;">
       					<a href="#">Welcome</a>
       					<span class="divider">|</span>
@@ -64,18 +65,8 @@
       		<a href="#" onmouseover="openTabContent('nosepins')">Nose Pins</a>
       		<span class="divider">|</span>
       		<a href="#" onmouseover="openTabContent('alljewels')">All Jewellery <i class="fa fa-caret-down"></i></a>
-      		<!-- 
-      		<span class="divider" >|</span>
-      		<a href="#" onmouseover="openTabContent('combinations')" >Jewellery Combinations</a>
-      		<div> 
-      			<a href="#" onclick="arrowClick()" class="left-paddle paddle hidden">
-					<
-				</a>
-				<a href="#" onclick="arrowClick()" class="right-paddle paddle">
-					>
-				</a>
-      		</div> -->
-    	</div>
+      	</div>
+      	  
     </div> <!-- End of navigation tabs -->
   	
   	<!-- The Occasion Section -->
@@ -224,8 +215,8 @@
 	</div>
 	
 	<!-- SlideShow Container -->
+  	
   	<div id="slideshow-div" class="slideshow-container">
-  		<!-- Full-width images with number and caption text -->
   		<div class="mySlides fade">
     		<div class="numbertext">1 / 4</div>
     		<img src="../img/slideshowImg1.png">
@@ -246,15 +237,15 @@
     		<img src="../img/slideshowImg4.png">
     		<div class="text">Caption Text</div>
   		</div>
-  	</div><!-- End of slide show -->
-  	<br>
-  	<div style="text-align:center;">
+  	</div> <!-- End of slide show -->
+  	<div class="dots" >
   		<span class="dot" ></span> 
   		<span class="dot" ></span> 
   		<span class="dot" ></span>
   		<span class="dot" ></span> 
-	</div><!-- End of dots -->
+	</div>  <!-- End of dots -->
   </div><!-- End of header -->
+  
   <div class="items">
   	<div class="row">
 		<div class="column left" style="border:1px solid #bbb;">
@@ -289,9 +280,10 @@
   		</div>
 	</div>
 	<a href="#header" class="back-to-top" style="display:inline;">
-		<i class="fa fa-arrow-circle-up"></i><span>Back to Top</span>
+			<i class="fa fa-arrow-circle-up"></i><span>Back to Top</span>
 	</a>
-  </div><!-- End of items -->
+  </div>  <!-- End of items -->
+  
   <div class="footer">
   	<div class="row">
   		<div class="col">
@@ -320,7 +312,7 @@
   			In case of any queries,<a href="../html/Contact.html" style="color:blue;font-size:140%;padding:0px"> Contact Us</a>
   		</div>
   	</div>	
-  </div><!-- End of footer -->  
+  </div> <!-- End of footer -->  
   <script src="../js/mksk.js" ></script>
   </body>
 </html>    
