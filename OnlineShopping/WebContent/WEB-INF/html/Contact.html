@@ -13,29 +13,30 @@
 	<div id="navigationTabs" class="topnav" > 
     	<div class="topnav-row">
     		<div class="topnav-row-left">
-    			<div class="trl-col" style="width:25%;float:left;">
+    			<div class="trl-col trl-col-left">
       				<a id="LogoDetails" href="../html/mksk.html">
     					<img src="../img/logo.png" id="LogoImage" alt="Logo Image"></img>
       				</a>
       			</div>
-      			<div class="trl-col" style="width:75%;float:right;">
+      			<div class="trl-col trl-col-right">
       				<span>MKSK JEWELS</span>
       			</div>
       		</div>
+      		
       		<div class="topnav-row-right">
-      			<div class="trr-col" style="width:55%;float:left;">
+      			<div class="trr-col trr-col-left">
       				<form class="searchbtn" action="action_page.php">
   						<input type="text" placeholder="Search for jewellery eg Gold.." name="search">
   						<button type="submit"><i class="fa fa-search"></i></button>
 					</form>
       			</div>
-      			<div class="trr-col trr-col-links" style="width:45%;float:right;">
+      			<div class="trr-col trr-col-right trr-col-links">
       				<div style="width:100%;height:50%;padding-left:25%;">
       					<a href="#">Welcome</a>
       					<span class="divider">|</span>
-      					<a href="#">Login</a>
+      					<a id="login" class="modalLink" data-modal="loginSection">Login</a>
       					<span class="divider">|</span>
-      					<a href="#">Signup</a>
+      					<a id="signup" class="modalLink" data-modal="signupSection">Signup</a>
       					<span class="divider">|</span>
       					<a href="#">AboutUs </a>
       				</div>
@@ -49,21 +50,167 @@
       			</div>
       		</div> 
       	</div>
-      	
-      	<div class="topnav-tabs">
-      			<a href="#">Occasions</a>
-      			<span class="divider">|</span>
-      			<a href="#">Rings</a>
-      			<span class="divider">|</span>
-      			<a href="#">Necklaces</a>
-      			<span class="divider">|</span>
-      			<a href="#">Bracelets</a>
-      			<span class="divider">|</span>
-      			<a href="#">Accessories</a>
-      			<span class="divider">|</span>
-      			<a href="#">Jewellery Sets</a>
-      	</div> 
-  	</div> <!-- End of navigation tabs -->
+      	<div id="navTabs" class="topnav-tabs">
+      		<a class="tablinks" onmouseover="openTabContent('occasions')">Occasions</a>
+      		<span class="divider">|</span>
+      		<a class="tablinks" onmouseover="openTabContent('rings')">Rings</a>
+      		<span class="divider">|</span>
+      		<a href="#" onmouseover="openTabContent('necklaces')">Necklaces</a>
+      		<span class="divider">|</span>
+      		<a href="#" onmouseover="openTabContent('bangles')">Bangles</a>
+      		<span class="divider">|</span>
+      		<a href="#" onmouseover="openTabContent('earrings')">Earrings</a>
+      		<span class="divider">|</span>
+      		<a href="#" onmouseover="openTabContent('nosepins')">Nose Pins</a>
+      		<span class="divider">|</span>
+      		<a href="#" onmouseover="openTabContent('alljewels')">All Jewellery <i class="fa fa-caret-down"></i></a>
+      	</div>
+    </div> <!-- End of navigation tabs -->
+  	
+  	<!-- The Occasion Section -->
+	<div id="occasions" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">Wedding</a>
+			<span class="divider">|</span>
+			<a href="#">Birthday</a>
+			<span class="divider">|</span>
+			<a href="#">Anniversary</a>
+			<span class="divider">|</span>
+			<a href="#">Baby Shower</a>
+			<span class="divider">|</span>
+			<a href="#">Parties</a> 
+		</div>
+  	</div>
+  	
+  	<!-- The Rings Section -->
+	<div id="rings" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">Diamond</a>
+			<span class="divider">|</span>
+			<a href="#">Sapphire</a>
+			<span class="divider">|</span>
+			<a href="#">Emerald</a>
+			<span class="divider">|</span>
+			<a href="#">Gold</a>
+			<span class="divider">|</span>
+			<a href="#">Ruby</a>
+			<span class="divider">|</span>
+			<a href="#">Topaz</a>
+		</div>
+  	</div>
+  	
+  	<!-- The Necklaces Section -->
+	<div id="necklaces" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">Chains</a>
+			<span class="divider">|</span>
+			<a href="#">Mangal Sutra</a>
+			<span class="divider">|</span>
+			<a href="#">Diamond</a>
+			<span class="divider">|</span>
+			<a href="#">Gold</a>
+			<span class="divider">|</span>
+			<a href="#">Jadau</a>
+			<span class="divider">|</span>
+			<a href="#">Pendants</a> 
+		</div>
+  	</div>
+  	
+  	<!-- The Bracelets Section -->
+	<div id="bangles" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">Bracelets</a>
+			<span class="divider">|</span>
+			<a href="#">Gold</a>
+			<span class="divider">|</span>
+			<a href="#">Silver</a>
+			<span class="divider">|</span>
+			<a href="#">Jadau</a>
+			<span class="divider">|</span>
+			<a href="#">Daily</a>
+			<span class="divider">|</span>
+			<a href="#">Kids</a> 
+		</div>
+  	</div>
+  	
+  	<!-- The Earrings Section -->
+	<div id="earrings" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">1</a>
+			<span class="divider">|</span>
+			<a href="#">2</a>
+			<span class="divider">|</span>
+			<a href="#">3</a>
+			<span class="divider">|</span>
+			<a href="#">4</a>
+			<span class="divider">|</span>
+			<a href="#">5</a> 
+		</div>
+  	</div>
+  	
+  	<!-- The Nose Pins Section -->
+	<div id="nosepins" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">1</a>
+			<span class="divider">|</span>
+			<a href="#">2</a>
+			<span class="divider">|</span>
+			<a href="#">3</a>
+			<span class="divider">|</span>
+			<a href="#">4</a>
+			<span class="divider">|</span>
+			<a href="#">5</a> 
+		</div>
+  	</div>
+  	
+  	<!-- The All Jewellery Section -->
+	<div id="alljewels" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">1</a>
+			<span class="divider">|</span>
+			<a href="#">2</a>
+			<span class="divider">|</span>
+			<a href="#">3</a>
+			<span class="divider">|</span>
+			<a href="#">4</a>
+			<span class="divider">|</span>
+			<a href="#">5</a> 
+		</div>
+  	</div>
+  	
+  	<!-- The Combinations Section -->
+	<div id="combinations" class="tabcontent">
+		<div class="tabcontent-links">
+			<a href="#">1</a>
+			<span class="divider">|</span>
+			<a href="#">2</a>
+			<span class="divider">|</span>
+			<a href="#">3</a>
+			<span class="divider">|</span>
+			<a href="#">4</a>
+			<span class="divider">|</span>
+			<a href="#">5</a> 
+		</div>
+  	</div>
+  	
+  	<div class="clearfix"></div>
+  	<!-- The Login Section -->
+	<div id="loginSection" class="modal">
+		<!-- Login Modal content -->
+  		<div class="modal-content">
+    		<span class="close" >&times;</span>
+    		<h2>Login Section..</h2>
+  		</div>
+	</div>
+	
+  	<!-- The SignUp Section -->
+	<div id="signupSection" class="modal">
+		<!-- SignUp Modal content -->
+  		<div class="modal-content">
+    		<span class="close" >&times;</span>
+    		<h2>Signup Section..</h2>
+  		</div>
+	</div>
 </div>
 <div class="container">
 	<h1>Contact Us</h1>
@@ -102,5 +249,6 @@
   		</div>
 	</div>	
 </div><!-- End of footer -->
+<script src="../js/mksk.js" ></script>
 </body>
 </html>
